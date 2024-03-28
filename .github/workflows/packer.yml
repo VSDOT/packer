@@ -17,10 +17,10 @@ jobs:
       run: |
         wget https://releases.hashicorp.com/packer/1.7.4/packer_1.7.4_linux_amd64.zip
         unzip -o packer_1.7.4_linux_amd64.zip
-        sudo mv packer /usr/local/bin/packer_new
-        sudo mv /usr/local/bin/packer /usr/local/bin/packer_old
-        sudo mv /usr/local/bin/packer_new /usr/local/bin/packer
+        sudo rm -rf /usr/local/bin/packer   # Remove old packer directory
+        sudo mv packer /usr/local/bin/     # Move the new packer binary
         packer --version
+
 
 
 
