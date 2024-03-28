@@ -1,4 +1,4 @@
-name: Automating Image Pipelines with HCP Packer
+name: Automating Image Pipelines with Packer
 
 on:
   push:
@@ -17,8 +17,11 @@ jobs:
       run: |
         wget https://releases.hashicorp.com/packer/1.7.4/packer_1.7.4_linux_amd64.zip
         unzip -o packer_1.7.4_linux_amd64.zip
-        sudo mv packer /usr/local/bin/
+        sudo mv packer /usr/local/bin/packer_new
+        sudo mv /usr/local/bin/packer /usr/local/bin/packer_old
+        sudo mv /usr/local/bin/packer_new /usr/local/bin/packer
         packer --version
+
 
 
 
