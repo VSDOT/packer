@@ -11,7 +11,7 @@
             "region": "ap-south-1",
             "secret_key": "{{user `aws_secret_key`}}",
             "security_group_id":"sg-04cce0d3e58f065a0",
-            "ssh_keypair_name":"SaravMacKeyPair",
+            "ssh_keypair_name":"packer",
             "ssh_private_key_file":"SaravMacKeyPair.pem",
             "associate_public_ip_address":"true",
             "source_ami_filter": {
@@ -21,7 +21,7 @@
               "root-device-type": "ebs"
               },
               "owners": ["099720109477"],
-              "most_recent": true
+              "most_recent": tru
             },
             "ssh_username": "ubuntu",
             "type": "amazon-ebs"
