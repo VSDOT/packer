@@ -5,11 +5,11 @@
     },
     "builders": [
         {
-            "access_key": "{{user `aws_access_key`}}",
+            "access_key": "{{user `AKIAXYKJXM7JP5B5XKO3`}}",
             "ami_name": "Tomcat8_OJDK8_AMI",
             "instance_type": "t3.micro",
             "region": "ap-south-1",
-            "secret_key": "{{user `aws_secret_key`}}",
+            "secret_key": "{{user `QL+bdQthL1iV28CeNvlQ35fuTX8JlAiey1giff6q`}}",
             "security_group_id":"sg-04cce0d3e58f065a0",
             "ssh_keypair_name":"packer",
             "ssh_private_key_file":"mynewkey.pem",
