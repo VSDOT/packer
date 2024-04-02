@@ -21,7 +21,7 @@
               "root-device-type": "ebs"
               },
               "owners": ["339712722806"],
-              "most_recent": tru
+              "most_recent": true
             },
             "ssh_username": "ubuntu",
             "type": "amazon-ebs"
