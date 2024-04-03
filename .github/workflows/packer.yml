@@ -32,6 +32,10 @@ jobs:
 
       run: packer version
 
-    - name: build packer
+    - name: Build AMI
+      run: packer build packer.json
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
-      run: packer build tomcat8_ojdk8.json
+    
