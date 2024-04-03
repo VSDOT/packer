@@ -29,7 +29,6 @@ jobs:
       shell: bash
  
     - name: Display Packer Version
-
       run: packer version
 
     - name: Build AMI
