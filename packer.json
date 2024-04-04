@@ -3,7 +3,7 @@
     {
       "type": "amazon-ebs",
       "region": "us-east-1",
-      "source_ami": "ami-xxxxxxxx", // Source AMI ID
+      "source_ami": "ami-355409876542", // Source AMI ID
       "instance_type": "t2.micro",
       "ssh_username": "ubuntu",
       "ami_name": "golden-image-{{timestamp}}"
